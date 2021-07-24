@@ -27,6 +27,7 @@ class Nav extends Component {
 
   render() {
     return (
+      <>
       <header className="nav">
         <div>
           <Link className="name" to={"/"}>
@@ -47,6 +48,29 @@ class Nav extends Component {
           </button>
         </div>
       </header>
+      <header className="mobnav">
+        <div className="container">
+        <div>
+          <Link className="name" to={"/"}>
+            <SiThemoviedatabase />
+            MovieDB
+          </Link>
+        </div>
+        <div>
+          <input
+            onChange={this.onMovieInput}
+            type="text"
+            name="moviesearch"
+            id="moviesearch"
+            placeholder="Search For Movies"
+          />
+          <button onClick={this.onMovieInput} className="searchbtn">
+            Search
+          </button>
+        </div>
+        </div>
+      </header>
+      </>
     );
   }
 }
