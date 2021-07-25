@@ -71,7 +71,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  
   padding-bottom: 40px;
   padding-top: 40px;
   flex-wrap: wrap;
@@ -79,6 +78,9 @@
 }
  .categories .card1{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  
+  
+
   transition: 0.3s;
   /* margin-top: 10px; */
   margin-bottom: 20px;
@@ -87,6 +89,9 @@
   background-color: white;
   width: 310px;
   height: 100%;
+}
+.categories .card1:hover{
+  /* box-shadow: 5px 5px 5px #8171c4; */
 }
  .categories .card1 img{
   width: 100%;
@@ -112,6 +117,7 @@
 .footer{
   background-color: #032541;
   height: 80px;
+  border-top: 2px solid #BB86FC;
   padding: 30px;
   text-align: center;
   color: white;
@@ -121,6 +127,10 @@
     width: 22px;
     color: white;
     height: 22px;
+  }
+  .categories .card1:hover{
+    /* box-shadow: 5px 5px 5px #8171c4; */
+    display: none;
   }
   .mobnav .name{
     color: white;
@@ -155,6 +165,8 @@
     justify-items: center;
     padding: 5% 20% 0px 20%;
     height: 120px;
+    border-bottom: 2px solid #BB86FC;
+
 
 
 
@@ -213,6 +225,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 0rem;
+    margin-left: 9%;
     
     
     /* row-gap: 80px; */
@@ -222,9 +235,8 @@
   }
   .categories .card1{
     /* margin-bottom: 20px; */
-    border-radius: 5px;
-    border: 15px solid #072835;
-    
+    border-radius: 20px;
+    border: 12px solid #072835;
   }
 }
 
