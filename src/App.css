@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .nav{
   background-color: #032541;
   padding: 20px;
@@ -50,13 +54,15 @@
     margin-bottom: 2vw;
     text-align: center;
     font-size: 34px;
+    margin-left: -5%;
     color: white;
     
   }
   
-  /* .main{
-    background: #121924;
-  } */
+  .main{
+    background: #072835;
+    height: 100%;
+  }
  .categories{
   margin: 0px 10% 0px 10%;
   align-items: center; /* left and  */
@@ -66,20 +72,21 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   
-  /* row-gap: 80px; */
-  /* margin-top: 30px; */
-  /* flex-wrap: wrap; */
+  padding-bottom: 40px;
+  padding-top: 40px;
+  flex-wrap: wrap;
   height: 100%;
 }
  .categories .card1{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   transition: 0.3s;
-  margin-top: 10px;
-  margin-bottom: 25px;
+  /* margin-top: 10px; */
+  margin-bottom: 20px;
+  border-radius: 2px;
   overflow: hidden;
   background-color: white;
-  width: 300px;
-  height: 420px;
+  width: 310px;
+  height: 100%;
 }
  .categories .card1 img{
   width: 100%;
@@ -123,14 +130,23 @@
     display: flex;
     margin-bottom: 15px;
     /* position: absolute; */
-    padding: 0px 20% 0px 20%;
+    padding: 0px 20% 0px 25%;
   }
   
   .nav-links a{
     color: white;
     text-decoration: none;
   }
+  .categories{
+    margin: 0px 10% 0px 10%;
 
+  }
+
+  .titlemain{
+    margin: 0px 0px 10px 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* display: none; */
+  }
   .mobnav{
     display:  inline-block;
     width: 100%;
@@ -161,7 +177,7 @@
   .mobnav input{
     /* background-color: #303748; */
     border: none;
-    width: 210px;
+    width: 230px;
     /* position: relative; */
     /* top: 80px; */
     background-image: linear-gradient(315deg, #8171c4 0%, #4381aa 74%);
@@ -198,10 +214,17 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 0rem;
     
+    
     /* row-gap: 80px; */
     /* margin-top: 30px; */
     /* flex-wrap: wrap; */
     /* height: 100%; */
+  }
+  .categories .card1{
+    /* margin-bottom: 20px; */
+    border-radius: 5px;
+    border: 15px solid #072835;
+    
   }
 }
 
@@ -253,14 +276,13 @@
     border: none;
     padding: 6px;
     /* position: absolute; */
-    top: 80px;
-
-    left: 260px;
+    /* top: 80px; */
+    /* left: 260px; */
     /* border-radius: 15px; */
   }
   .categories{
     /* margin: 0px 115px 0px 40px; */
-    align-items: center; /* left and  */
+    align-items: center;  
     justify-content: center;
     /* justify-content: space-between; */
     display: grid;
