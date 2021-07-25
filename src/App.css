@@ -9,6 +9,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
+  position: sticky;
+  top: 0;
+  /* height: 80px; */
   border-bottom: 2px solid #BB86FC;
 }
 .mobnav{
@@ -166,10 +169,8 @@
     padding: 5% 20% 0px 20%;
     height: 120px;
     border-bottom: 2px solid #BB86FC;
-
-
-
-
+    position: sticky;
+    top: 0;
   }
   .nav{
     background-color: #032541;
